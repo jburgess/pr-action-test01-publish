@@ -1,0 +1,7 @@
+:isGenerated:
+
+include::Environment.adoc[]
+
+include::Fruit.adoc[]
+
+

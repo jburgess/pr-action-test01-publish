@@ -1,34 +1,34 @@
 openapi: 3.0.1
 info:
-  title: XXX_FruitBasket Test API
+  title: XXX_FRUIT Test API
   description: ....
   version: 5.0.0
 servers:
   - url: 'https://serverRoot'
 tags:
-  - name: fruitBasket
-    description: Operations for FruitBasket Resource
+  - name: fruit
+    description: Operations for Fruit Resource
   - name: notification listener
     description: Notifications for Resource Lifecycle and event notifications
   - name: events subscription
     description: Endpoints to register and terminate an Event Listener
 paths:
-  /fruitBasket:
+  /fruit:
     get:
       tags:
-        - fruitBasket
-      summary: List or find FruitBasket objects
+        - fruit
+      summary: List or find Fruit objects
       description: >-
-        This operation retrieves a FruitBasket entity. Attribute selection enabled for all first
-        level attributes.
-      operationId: listFruitBasket
+        This operation retrieves a Fruit entity. Attribute selection enabled for all first level
+        attributes.
+      operationId: listFruit
       parameters:
         - $ref: '#/components/parameters/Fields'
         - $ref: '#/components/parameters/Offset'
         - $ref: '#/components/parameters/Limit'
       responses:
         '200':
-          $ref: '#/components/responses/200FruitBasketArray'
+          $ref: '#/components/responses/200FruitArray'
         '400':
           $ref: '#/components/responses/400'
         '401':
@@ -45,18 +45,18 @@ paths:
           $ref: '#/components/responses/501'
         '503':
           $ref: '#/components/responses/503'
-  '/fruitBasket/{id}':
+  '/fruit/{id}':
     get:
       tags:
-        - fruitBasket
-      summary: Retrieves a FruitBasket by ID
-      description: List or find FruitBasket objects
-      operationId: retrieveFruitBasket
+        - fruit
+      summary: Retrieves a Fruit by ID
+      description: List or find Fruit objects
+      operationId: retrieveFruit
       parameters:
         - $ref: '#/components/parameters/Id'
       responses:
         '200':
-          $ref: '#/components/responses/200FruitBasket_Get'
+          $ref: '#/components/responses/200Fruit_Get'
         '400':
           $ref: '#/components/responses/400'
         '401':
@@ -143,7 +143,7 @@ components:
       allOf:
         - $ref: '#/components/schemas/Entity'
         - type: object
-          description: A JSON Schema G
+          description: A JSON Schema F
           properties:
             fruitProperty:
               type: string
@@ -155,29 +155,6 @@ components:
         propertyName: '@type'
         mapping:
           Fruit: '#/components/schemas/Fruit'
-    FruitBasket:
-      allOf:
-        - $ref: '#/components/schemas/Entity'
-        - type: object
-          description: A JSON Schema
-          properties:
-            fruitBasketProperty:
-              type: string
-              description: FruitBasketProperty description
-            newFruitBasketProperty:
-              type: string
-              description: FruitProperty description
-            newFruitBasketProperty01:
-              type: string
-              description: New FruitProperty 01 description
-            fruit:
-              type: array
-              items:
-                $ref: '#/components/schemas/Fruit'
-      discriminator:
-        propertyName: '@type'
-        mapping:
-          FruitBasket: '#/components/schemas/FruitBasket'
     Error:
       discriminator:
         propertyName: '@type'
@@ -338,7 +315,7 @@ components:
         application/json:
           schema:
             $ref: '#/components/schemas/Error'
-    200FruitBasketArray:
+    200FruitArray:
       description: Success
       headers:
         X-Total-Count:
@@ -350,52 +327,52 @@ components:
           schema:
             type: array
             items:
-              $ref: '#/components/schemas/FruitBasket'
-    200FruitBasket_Get:
+              $ref: '#/components/schemas/Fruit'
+    200Fruit_Get:
       description: Success
       content:
         application/json:
           schema:
-            $ref: '#/components/schemas/FruitBasket'
-    200FruitBasket_Patch:
+            $ref: '#/components/schemas/Fruit'
+    200Fruit_Patch:
       description: Success
       content:
         application/json:
           schema:
-            $ref: '#/components/schemas/FruitBasket'
+            $ref: '#/components/schemas/Fruit'
         application/merge-patch+json:
           schema:
-            $ref: '#/components/schemas/FruitBasket'
+            $ref: '#/components/schemas/Fruit'
         application/json-patch+json:
           schema:
             oneOf:
-              - $ref: '#/components/schemas/FruitBasket'
+              - $ref: '#/components/schemas/Fruit'
               - type: array
                 items:
-                  $ref: '#/components/schemas/FruitBasket'
+                  $ref: '#/components/schemas/Fruit'
               - type: string
                 nullable: true
         application/json-patch-query+json:
           schema:
             oneOf:
-              - $ref: '#/components/schemas/FruitBasket'
+              - $ref: '#/components/schemas/Fruit'
               - type: array
                 items:
-                  $ref: '#/components/schemas/FruitBasket'
+                  $ref: '#/components/schemas/Fruit'
               - type: string
                 nullable: true
-    200FruitBasket_Put:
+    200Fruit_Put:
       description: Success
       content:
         application/json:
           schema:
-            $ref: '#/components/schemas/FruitBasket'
-    201FruitBasket:
+            $ref: '#/components/schemas/Fruit'
+    201Fruit:
       description: Created
       content:
         application/json:
           schema:
-            $ref: '#/components/schemas/FruitBasket'
+            $ref: '#/components/schemas/Fruit'
     Error:
       description: Error
       content:
