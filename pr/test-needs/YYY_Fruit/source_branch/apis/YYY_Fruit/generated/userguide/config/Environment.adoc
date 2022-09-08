@@ -4,11 +4,11 @@ ifndef::complete[]
 :png:
 
 ifdef::maindoc[]
-:generated: ../
+:generated: 
 endif::[]
 
 ifndef::maindoc[]
-:generated: ../../
+:generated: ../
 endif::[]
 
 :parts: ./
