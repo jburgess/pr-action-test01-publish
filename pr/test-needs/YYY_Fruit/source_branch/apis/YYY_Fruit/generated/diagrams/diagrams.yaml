@@ -1,0 +1,5 @@
+graphs:
+ -
+  Hub: Resource_Hub.puml
+ -
+  Fruit: Resource_Fruit.puml
