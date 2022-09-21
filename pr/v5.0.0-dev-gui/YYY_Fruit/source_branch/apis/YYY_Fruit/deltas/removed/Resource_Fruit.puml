@@ -1,0 +1,49 @@
+@startuml
+'
+' Resource:  Fruit
+' Source:    TMF888-YYY_Fruit-v5.0.0.oas.yaml
+'
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam class {
+   BorderColor<<Extension>> blue
+   FontColor<<Extension>> blue
+   backgroundColor<<Enumeration>> #E6F5F7
+   backgroundColor<<Ref>> #FFFFE0
+   backgroundColor<<Pivot>> #FFFFFFF
+   backgroundColor<<Resource>> #FCF2E3
+   backgroundColor<<SubResource>> #FFFFFFF
+   backgroundColor<<SubResourceReference>> #FADADD
+}
+
+skinparam legend {
+   borderRoundCorner 0
+   borderColor red
+   backgroundColor white
+}
+
+class Fruit  <<Pivot>> {
+    <color:blue>color : String
+    fruitProperty : String
+    href : String
+    id : String
+    @baseType : String
+    @schemaLocation : String
+    @type : String
+}
+
+
+
+
+skinparam legendBackgroundColor #transparent
+skinparam legendBorderColor #transparent
+
+legend
+   |= <size:10>Color </size>|= <size:10>Description </size>|
+   | <#FFFFFFF> | <size:10>Resource (entry point) </size>|
+   | <#blue> | <size:10>Removed </size>|
+endlegend
+
+@enduml

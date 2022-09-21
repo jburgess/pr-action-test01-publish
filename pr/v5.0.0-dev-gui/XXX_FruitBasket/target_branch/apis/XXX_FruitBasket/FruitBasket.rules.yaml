@@ -1,0 +1,20 @@
+rulesVersion: 1.0.0
+
+api:
+
+  shortName: XXX_FruitBasket
+  name: XXX_FruitBasket Test API
+  tmfId: TMF777
+  description: "...."
+
+  hostUrl: https://serverRoot
+  basePath: /tmf-api/xxx/v5/
+  version: "5.0.0"
+
+  resources:
+    - name: FruitBasket
+      schema: "schemas/Sdo/FruitBasket.schema.json#/definitions/FruitBasket"
+      supportedHttpMethods:
+        GET:
+          required: true
+
