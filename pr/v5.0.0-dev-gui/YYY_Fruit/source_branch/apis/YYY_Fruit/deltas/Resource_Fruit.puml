@@ -1,0 +1,42 @@
+@startuml
+class Fruit <<Pivot>> {
+   <color:red>color : String
+   fruitProperty : String
+   href : String
+   id : String
+   <color:blue>newFruitProperty : String
+   @baseType : String
+   @schemaLocation : String
+   @type : String
+}
+
+hide circle
+hide methods
+hide stereotype
+show <<Enumeration>> stereotype
+skinparam legend {
+   borderRoundCorner 0
+   borderColor red
+   backgroundColor white
+}
+skinparam class {
+   BorderColor<<Extension-1>> blue
+   FontColor<<Extension-1>> blue
+   backgroundColor<<Enumeration>> #E6F5F7
+   backgroundColor<<Ref>> #FFFFE0
+   backgroundColor<<Pivot>> #FFFFFFF
+   backgroundColor<<Resource>> #FCF2E3
+   backgroundColor<<SubResource>> #FFFFFFF
+   backgroundColor<<SubResourceReference>> #FADADD
+   BorderColor<<Extension-2>> red
+   FontColor<<Extension-2>> red
+}
+legend 
+   |= <size:10>Color |= <size:10>Description ||
+   |<#FFFFFFF> | <size:10>Resource (entry point) ||
+   |<#blue> | <size:10>Added ||
+   |<#red> | <size:10>Removed ||
+endlegend 
+skinparam legendBackgroundColor #transparent
+skinparam legendBorderColor #transparent
+@enduml
