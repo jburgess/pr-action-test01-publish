@@ -4,7 +4,7 @@ class Fruit <<Pivot>> {
    fruitProperty : String
    href : String
    id : String
-   <color:blue>newFruitProperty : String
+   <color:blue>newFruitProperty1 : String
    @baseType : String
    @schemaLocation : String
    @type : String

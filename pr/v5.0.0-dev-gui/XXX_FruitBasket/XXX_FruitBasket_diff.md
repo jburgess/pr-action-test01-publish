@@ -22,7 +22,7 @@ GET /fruitBasket
                         - Schema #2 modified
                           - Description changed from 'A JSON Schema G' to 'A JSON Schema I'
                           - Properties changed
-                            - New property: newFruitProperty
+                            - New property: newFruitProperty1
                             - Deleted property: color
 
 GET /fruitBasket/{id}
@@ -40,6 +40,6 @@ GET /fruitBasket/{id}
                       - Schema #2 modified
                         - Description changed from 'A JSON Schema G' to 'A JSON Schema I'
                         - Properties changed
-                          - New property: newFruitProperty
+                          - New property: newFruitProperty1
                           - Deleted property: color
 

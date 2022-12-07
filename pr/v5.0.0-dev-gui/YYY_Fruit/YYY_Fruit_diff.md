@@ -17,7 +17,7 @@ GET /fruit
               - Schema #2 modified
                 - Description changed from 'A JSON Schema G' to 'A JSON Schema I'
                 - Properties changed
-                  - New property: newFruitProperty
+                  - New property: newFruitProperty1
                   - Deleted property: color
 
 GET /fruit/{id}
@@ -30,6 +30,6 @@ GET /fruit/{id}
             - Schema #2 modified
               - Description changed from 'A JSON Schema G' to 'A JSON Schema I'
               - Properties changed
-                - New property: newFruitProperty
+                - New property: newFruitProperty1
                 - Deleted property: color
 

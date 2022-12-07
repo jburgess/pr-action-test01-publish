@@ -148,7 +148,7 @@ components:
             fruitProperty:
               type: string
               description: FruitProperty description
-            newFruitProperty:
+            newFruitProperty1:
               type: string
               description: New FruitProperty description
       discriminator:
