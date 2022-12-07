@@ -153,7 +153,7 @@ description.</p></td>
 <td style="text-align: left;"><p>A String. Unique identifier.</p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><p>newFruitProperty</p></td>
+<td style="text-align: left;"><p>newFruitProperty1</p></td>
 <td style="text-align: left;"><p>A String. New FruitProperty
 description.</p></td>
 </tr>
