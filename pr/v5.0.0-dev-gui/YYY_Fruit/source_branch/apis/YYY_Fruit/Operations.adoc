@@ -1,0 +1,26 @@
+:isGenerated:
+
+include::Environment.adoc[]
+
+=== Operations on Fruit
+
+==== Retrieves a Fruit by ID
+
+`*GET /fruit/{id}?fields&#61;...&amp;{filtering}*`
+
+*Description*
+
+This operation retrieves a Fruit entity.
+Attribute selection is enabled for all first level attributes.
+Filtering may be available depending on the compliance level supported by an implementation.
+					
+==== List or find Fruit objects
+
+`*GET /fruit*`
+
+*Description*
+
+This operation list Fruit entities.
+Attribute selection is enabled for all first level attributes.
+Filtering may be available depending on the compliance level supported by an implementation.
+					

@@ -1,0 +1,25 @@
+
+ifndef::complete[]
+
+:png:
+
+ifndef::maindoc[]
+:generated: ../
+:diagrams:  {generated}/images
+:imagesdir: {generated}/images/
+endif::[]
+
+ifdef::isGenerated[]
+:samples: ./samples
+:imagesdir: {generated}/images/
+endif::[]
+
+endif::[]
+
+ifdef::env-github[]
+:diagrams: ../../generated/images
+endif::[]
+
+ifdef::complete[]
+:diagrams: ../../generated/images
+endif::[]
