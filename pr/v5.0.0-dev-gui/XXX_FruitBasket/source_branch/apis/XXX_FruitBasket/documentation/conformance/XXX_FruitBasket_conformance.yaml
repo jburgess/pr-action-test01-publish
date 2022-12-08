@@ -1,0 +1,141 @@
+conformance:
+
+  resources:
+   - Hub
+   - FruitBasket
+
+  notifications: []
+
+  FruitBasket:
+    condition: M
+    comment: ""
+    operations:
+      GET:
+        condition: M
+        comment: ""
+    attributes:
+      '@baseType':
+        condition: ""
+        comment: ""
+      '@schemaLocation':
+        condition: ""
+        comment: ""
+      '@type':
+        condition: ""
+        comment: ""
+      fruit:
+        condition: ""
+        comment: Array of Fruit
+      fruit.@baseType:
+        condition: ""
+        comment: ""
+      fruit.@schemaLocation:
+        condition: ""
+        comment: ""
+      fruit.@type:
+        condition: ""
+        comment: ""
+      fruit.fruitProperty:
+        condition: ""
+        comment: ""
+      fruit.href:
+        condition: ""
+        comment: ""
+      fruit.id:
+        condition: ""
+        comment: ""
+      fruit.newFruitProperty1:
+        condition: ""
+        comment: ""
+      fruitBasketProperty:
+        condition: ""
+        comment: ""
+      href:
+        condition: ""
+        comment: ""
+      id:
+        condition: ""
+        comment: ""
+      newFruitBasketProperty:
+        condition: ""
+        comment: ""
+      newFruitBasketProperty01:
+        condition: ""
+        comment: ""
+    operations-details:
+      POST:
+        mandatory: {}
+      PATCH:
+        patchable: {}
+        non-patchable:
+          '@baseType':
+            rule: ""
+          '@schemaLocation':
+            rule: ""
+          '@type':
+            rule: ""
+          fruit:
+            rule: ""
+          fruitBasketProperty:
+            rule: ""
+          href:
+            rule: ""
+          id:
+            rule: ""
+          newFruitBasketProperty:
+            rule: ""
+          newFruitBasketProperty01:
+            rule: ""
+
+  Hub:
+    condition: ""
+    comment: ""
+    operations:
+      POST:
+        condition: ""
+        comment: ""
+      DELETE:
+        condition: ""
+        comment: ""
+    attributes:
+      '@baseType':
+        condition: ""
+        comment: ""
+      '@schemaLocation':
+        condition: ""
+        comment: ""
+      '@type':
+        condition: ""
+        comment: ""
+      callback:
+        condition: M
+        comment: ""
+      href:
+        condition: ""
+        comment: ""
+      id:
+        condition: ""
+        comment: ""
+      query:
+        condition: ""
+        comment: ""
+    operations-details:
+      POST:
+        mandatory: {}
+      PATCH:
+        patchable: {}
+        non-patchable:
+          '@baseType':
+            rule: ""
+          '@schemaLocation':
+            rule: ""
+          '@type':
+            rule: ""
+          callback:
+            rule: ""
+          href:
+            rule: ""
+          id:
+            rule: ""
+          query:
+            rule: ""
