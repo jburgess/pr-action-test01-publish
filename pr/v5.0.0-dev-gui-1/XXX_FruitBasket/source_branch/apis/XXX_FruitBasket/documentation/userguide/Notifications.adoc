@@ -1,0 +1,22 @@
+:isGenerated:
+
+include::Environment.adoc[]
+
+0 notifications are defined for this API.
+
+Notifications related to FruitBasket:
+
+
+
+The notification structure for all notifications in this API follow the pattern depicted by the figure below.
+A notification event resource (depicted by "SpecificEvent" placeholder) is a sub class of a generic Event structure containing at least an id of the event occurrence (eventId), an event timestamp (eventTime), and the name of the resource (eventType). 
+This notification structure owns an event payload structure ("SpecificEventPayload" placeholder) linked to the resource concerned by the notification using the resource name as access field ("resourceName" placeholder).
+
+[.text-center]
+image::{diagrams}/NotificationsPattern.png[]
+[.text-center]
+Figure {counter:figure} - Notification Pattern
+[.text-left]
+
+
+

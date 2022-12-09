@@ -1,0 +1,110 @@
+conformance:
+
+  resources:
+   - Hub
+   - Fruit
+
+  notifications: []
+
+  Fruit:
+    condition: M
+    comment: ""
+    operations:
+      GET:
+        condition: M
+        comment: ""
+    attributes:
+      '@baseType':
+        condition: ""
+        comment: ""
+      '@schemaLocation':
+        condition: ""
+        comment: ""
+      '@type':
+        condition: ""
+        comment: ""
+      fruitProperty:
+        condition: ""
+        comment: ""
+      href:
+        condition: ""
+        comment: ""
+      id:
+        condition: ""
+        comment: ""
+      newFruitProperty1:
+        condition: ""
+        comment: ""
+    operations-details:
+      POST:
+        mandatory: {}
+      PATCH:
+        patchable: {}
+        non-patchable:
+          '@baseType':
+            rule: ""
+          '@schemaLocation':
+            rule: ""
+          '@type':
+            rule: ""
+          fruitProperty:
+            rule: ""
+          href:
+            rule: ""
+          id:
+            rule: ""
+          newFruitProperty1:
+            rule: ""
+
+  Hub:
+    condition: ""
+    comment: ""
+    operations:
+      POST:
+        condition: ""
+        comment: ""
+      DELETE:
+        condition: ""
+        comment: ""
+    attributes:
+      '@baseType':
+        condition: ""
+        comment: ""
+      '@schemaLocation':
+        condition: ""
+        comment: ""
+      '@type':
+        condition: ""
+        comment: ""
+      callback:
+        condition: M
+        comment: ""
+      href:
+        condition: ""
+        comment: ""
+      id:
+        condition: ""
+        comment: ""
+      query:
+        condition: ""
+        comment: ""
+    operations-details:
+      POST:
+        mandatory: {}
+      PATCH:
+        patchable: {}
+        non-patchable:
+          '@baseType':
+            rule: ""
+          '@schemaLocation':
+            rule: ""
+          '@type':
+            rule: ""
+          callback:
+            rule: ""
+          href:
+            rule: ""
+          id:
+            rule: ""
+          query:
+            rule: ""
